@@ -6,9 +6,5 @@ import path from 'path'
 export default defineConfig({
   plugins: [react()],
    base: "/Coffee-book-project/",
-    resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
-  },
+    
 })
