@@ -20,13 +20,13 @@ const routes =createBrowserRouter([
           {
             path:'/',
             element:<CoffeeCards></CoffeeCards>,
-            loader: ()=> fetch('/Coffees.json'),
+            loader: ()=> fetch(`${import.meta.env.BASE_URL}Coffees.json`),
           },
 
           {
             path:'/category/:category',
             element:<CoffeeCards></CoffeeCards>,
-            loader: ()=> fetch('/Coffees.json'),
+            loader: ()=> fetch(`${import.meta.env.BASE_URL}Coffees.json`),
           }
         ]
       },
