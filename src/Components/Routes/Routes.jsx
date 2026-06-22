@@ -1,4 +1,4 @@
-import { createBrowserRouter, createHashRouter,createHashRouter } from "react-router-dom";
+import {  createHashRouter} from "react-router-dom";
 import App from "../../App";
 import Layouts from "../Layouts/Layouts";
 import Home from "../Pages/Home";
@@ -20,13 +20,13 @@ const routes = createHashRouter([
           {
             index: true,
             element:<CoffeeCards></CoffeeCards>,
-            loader: ()=> fetch(`${import.meta.env.BASE_URL}Coffees.json`),
+            loader: ()=> fetch('/Coffees.json'),
           },
 
           {
             path:'/category/:category',
             element:<CoffeeCards></CoffeeCards>,
-            loader: ()=> fetch(`${import.meta.env.BASE_URL}Coffees.json`),
+            loader: ()=> fetch('/Coffees.json'),
           }
         ]
       },
