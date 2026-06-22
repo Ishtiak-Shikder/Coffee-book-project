@@ -7,6 +7,7 @@ const CoffeeCards = () => {
     const {category} = useParams();
     const data = useLoaderData();
     const [coffees,setCoffees] = useState([]);
+    console.log(data)
     useEffect(()=>{
        if(category){
          const filterByData = [...data].filter(coffee=> coffee.category === category);

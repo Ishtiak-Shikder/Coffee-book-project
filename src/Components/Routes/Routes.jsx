@@ -20,7 +20,7 @@ const routes = createHashRouter([
           {
             index: true,
             element:<CoffeeCards></CoffeeCards>,
-            loader: ()=> fetch('/Coffees.json'),
+            loader: ()=> fetch('/Categories.json'),
           },
 
           {
@@ -34,7 +34,7 @@ const routes = createHashRouter([
       {
         path:'/coffees',
         element:<Coffees></Coffees>,
-        loader: ()=> fetch('/public/Coffees.json'),
+        loader: ()=> fetch('/Coffees.json'),
       },
 
       {
