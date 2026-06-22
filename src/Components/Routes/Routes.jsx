@@ -18,7 +18,7 @@ const routes =createBrowserRouter([
         loader:()=> fetch('/Categories.json'),
         children:[
           {
-            path:'/',
+            index: true,
             element:<CoffeeCards></CoffeeCards>,
             loader: ()=> fetch(`${import.meta.env.BASE_URL}Coffees.json`),
           },
