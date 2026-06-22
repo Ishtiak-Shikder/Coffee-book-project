@@ -1,0 +1,356 @@
+[
+  {
+    "id": 1,
+    "name": "Espresso",
+    "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a",
+    "category": "Dessert Coffee",
+    "ingredients": ["Coffee Beans", "Water"],
+    "nutrition_info": {
+      "calories": 5,
+      "fat": 0,
+      "carbohydrates": 1,
+      "protein": 0.3
+    },
+    "origin": "Italy",
+    "type": "Strong",
+    "description": "A concentrated coffee shot with a rich flavor and crema.",
+    "making_process": [
+      "Grind coffee beans finely",
+      "Tamp grounds into portafilter",
+      "Extract under pressure",
+      "Serve immediately"
+    ],
+    "rating": 4.9,
+    "popularities": 98
+  },
+  {
+    "id": 2,
+    "name": "Americano",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
+    "category": "Iced Coffee",
+    "ingredients": ["Espresso", "Hot Water"],
+    "nutrition_info": {
+      "calories": 10,
+      "fat": 0,
+      "carbohydrates": 2,
+      "protein": 0.5
+    },
+    "origin": "United States",
+    "type": "Mild",
+    "description": "Espresso diluted with hot water for a smooth taste.",
+    "making_process": [
+      "Prepare espresso",
+      "Add hot water",
+      "Serve hot"
+    ],
+    "rating": 4.6,
+    "popularities": 88
+  },
+  {
+    "id": 3,
+    "name": "Cappuccino",
+    "image": "https://images.unsplash.com/photo-1534778101976-62847782c213",
+    "category": "Iced Coffee",
+    "ingredients": ["Espresso", "Steamed Milk", "Milk Foam"],
+    "nutrition_info": {
+      "calories": 120,
+      "fat": 4,
+      "carbohydrates": 10,
+      "protein": 6
+    },
+    "origin": "Italy",
+    "type": "Creamy",
+    "description": "A balanced coffee with espresso, steamed milk, and foam.",
+    "making_process": [
+      "Brew espresso",
+      "Steam milk",
+      "Add milk and foam",
+      "Serve"
+    ],
+    "rating": 4.8,
+    "popularities": 95
+  },
+  {
+    "id": 4,
+    "name": "Latte",
+    "image": "https://images.unsplash.com/photo-1561047029-3000c68339ca",
+    "category": "Beverage Coffee",
+    "ingredients": ["Espresso", "Steamed Milk"],
+    "nutrition_info": {
+      "calories": 150,
+      "fat": 6,
+      "carbohydrates": 12,
+      "protein": 8
+    },
+    "origin": "Italy",
+    "type": "Smooth",
+    "description": "A creamy coffee with a higher milk ratio.",
+    "making_process": [
+      "Brew espresso",
+      "Steam milk",
+      "Pour milk into espresso",
+      "Serve"
+    ],
+    "rating": 4.7,
+    "popularities": 92
+  },
+  {
+    "id": 5,
+    "name": "Mocha",
+    "image": "https://images.unsplash.com/photo-1579888944880-d98341245702",
+    "category": "Beverage Coffee",
+    "ingredients": ["Espresso", "Chocolate Syrup", "Milk", "Whipped Cream"],
+    "nutrition_info": {
+      "calories": 250,
+      "fat": 10,
+      "carbohydrates": 30,
+      "protein": 8
+    },
+    "origin": "Yemen",
+    "type": "Sweet",
+    "description": "Coffee blended with chocolate and milk.",
+    "making_process": [
+      "Prepare espresso",
+      "Add chocolate syrup",
+      "Mix with milk",
+      "Top with whipped cream"
+    ],
+    "rating": 4.8,
+    "popularities": 94
+  },
+  {
+    "id": 6,
+    "name": "Macchiato",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
+    "category": "Iced Coffee",
+    "ingredients": ["Espresso", "Milk Foam"],
+    "nutrition_info": {
+      "calories": 20,
+      "fat": 1,
+      "carbohydrates": 2,
+      "protein": 1
+    },
+    "origin": "Italy",
+    "type": "Bold",
+    "description": "Espresso marked with a small amount of milk foam.",
+    "making_process": [
+      "Brew espresso",
+      "Add milk foam",
+      "Serve"
+    ],
+    "rating": 4.5,
+    "popularities": 84
+  },
+  {
+    "id": 7,
+    "name": "Flat White",
+    "image": "https://images.unsplash.com/photo-1511920170033-f8396924c348",
+    "category": "Beverage Coffee",
+    "ingredients": ["Espresso", "Microfoam Milk"],
+    "nutrition_info": {
+      "calories": 140,
+      "fat": 5,
+      "carbohydrates": 11,
+      "protein": 7
+    },
+    "origin": "Australia",
+    "type": "Velvety",
+    "description": "Smooth coffee with finely textured milk.",
+    "making_process": [
+      "Prepare espresso",
+      "Steam milk to microfoam",
+      "Combine and serve"
+    ],
+    "rating": 4.7,
+    "popularities": 89
+  },
+  {
+    "id": 8,
+    "name": "Cold Brew",
+    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735",
+    "category": "Iced Coffee",
+    "ingredients": ["Coffee Grounds", "Cold Water"],
+    "nutrition_info": {
+      "calories": 15,
+      "fat": 0,
+      "carbohydrates": 3,
+      "protein": 1
+    },
+    "origin": "Japan",
+    "type": "Refreshing",
+    "description": "Coffee steeped in cold water for several hours.",
+    "making_process": [
+      "Steep coffee grounds",
+      "Filter concentrate",
+      "Serve chilled"
+    ],
+    "rating": 4.8,
+    "popularities": 93
+  },
+  {
+    "id": 9,
+    "name": "Iced Latte",
+    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c",
+    "category": "Dessert Coffee",
+    "ingredients": ["Espresso", "Milk", "Ice"],
+    "nutrition_info": {
+      "calories": 130,
+      "fat": 4,
+      "carbohydrates": 11,
+      "protein": 7
+    },
+    "origin": "Italy",
+    "type": "Cold & Creamy",
+    "description": "Chilled latte served over ice.",
+    "making_process": [
+      "Prepare espresso",
+      "Add ice",
+      "Pour milk",
+      "Serve cold"
+    ],
+    "rating": 4.6,
+    "popularities": 90
+  },
+  {
+    "id": 10,
+    "name": "Irish Coffee",
+    "image": "https://images.unsplash.com/photo-1445116572660-236099ec97a0",
+    "category": "Iced Coffee",
+    "ingredients": ["Coffee", "Brown Sugar", "Cream"],
+    "nutrition_info": {
+      "calories": 180,
+      "fat": 8,
+      "carbohydrates": 15,
+      "protein": 2
+    },
+    "origin": "Ireland",
+    "type": "Rich",
+    "description": "A warm coffee topped with lightly whipped cream.",
+    "making_process": [
+      "Brew coffee",
+      "Add sugar",
+      "Top with cream",
+      "Serve"
+    ],
+    "rating": 4.4,
+    "popularities": 80
+  },
+  {
+    "id": 11,
+    "name": "Affogato",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
+    "category": "Beverage Coffee",
+    "ingredients": ["Espresso", "Vanilla Ice Cream"],
+    "nutrition_info": {
+      "calories": 220,
+      "fat": 9,
+      "carbohydrates": 28,
+      "protein": 4
+    },
+    "origin": "Italy",
+    "type": "Dessert",
+    "description": "Espresso poured over vanilla ice cream.",
+    "making_process": [
+      "Place ice cream in bowl",
+      "Pour hot espresso",
+      "Serve immediately"
+    ],
+    "rating": 4.9,
+    "popularities": 91
+  },
+  {
+    "id": 12,
+    "name": "Turkish Coffee",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
+    "category": "Iced Coffee",
+    "ingredients": ["Finely Ground Coffee", "Water", "Sugar"],
+    "nutrition_info": {
+      "calories": 25,
+      "fat": 0,
+      "carbohydrates": 5,
+      "protein": 1
+    },
+    "origin": "Turkey",
+    "type": "Traditional",
+    "description": "Strong coffee brewed in a special pot called cezve.",
+    "making_process": [
+      "Mix coffee and water",
+      "Heat slowly",
+      "Allow foam to form",
+      "Serve unfiltered"
+    ],
+    "rating": 4.8,
+    "popularities": 87
+  },
+  {
+    "id": 13,
+    "name": "Vietnamese Coffee",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
+    "category": "Beverage Coffee",
+    "ingredients": ["Coffee", "Condensed Milk"],
+    "nutrition_info": {
+      "calories": 190,
+      "fat": 5,
+      "carbohydrates": 30,
+      "protein": 4
+    },
+    "origin": "Vietnam",
+    "type": "Sweet",
+    "description": "Strong coffee served with sweet condensed milk.",
+    "making_process": [
+      "Brew coffee using filter",
+      "Add condensed milk",
+      "Mix and serve"
+    ],
+    "rating": 4.7,
+    "popularities": 86
+  },
+  {
+    "id": 14,
+    "name": "Frappuccino",
+    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c",
+    "category": "Dessert Coffee",
+    "ingredients": ["Coffee", "Milk", "Ice", "Whipped Cream"],
+    "nutrition_info": {
+      "calories": 280,
+      "fat": 11,
+      "carbohydrates": 38,
+      "protein": 6
+    },
+    "origin": "United States",
+    "type": "Frozen",
+    "description": "A blended iced coffee beverage.",
+    "making_process": [
+      "Blend coffee and ice",
+      "Add milk",
+      "Top with whipped cream",
+      "Serve cold"
+    ],
+    "rating": 4.5,
+    "popularities": 96
+  },
+  {
+    "id": 15,
+    "name": "Cortado",
+    "image": "https://images.unsplash.com/photo-1511920170033-f8396924c348",
+    "category": "Beverage Coffee",
+    "ingredients": ["Espresso", "Warm Milk"],
+    "nutrition_info": {
+      "calories": 70,
+      "fat": 3,
+      "carbohydrates": 5,
+      "protein": 4
+    },
+    "origin": "Spain",
+    "type": "Balanced",
+    "description": "Espresso balanced with an equal amount of warm milk.",
+    "making_process": [
+      "Prepare espresso",
+      "Warm milk",
+      "Combine equally",
+      "Serve"
+    ],
+    "rating": 4.6,
+    "popularities": 82
+  }
+]

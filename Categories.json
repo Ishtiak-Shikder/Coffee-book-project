@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Beverage Coffee",
+    "slug": "beverage-coffee"
+  },
+  {
+    "id": 2,
+    "name": "Iced Coffee",
+    "slug": "iced-coffee"
+  },
+  {
+    "id": 3,
+    "name": "Dessert Coffee",
+    "slug": "dessert-coffee"
+  }
+]
