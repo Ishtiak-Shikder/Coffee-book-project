@@ -15,18 +15,18 @@ const routes = createHashRouter([
         {
         path:'/',
         element:<Home></Home>,
-        loader:()=> fetch('./Categories.json'),
+        loader:()=> fetch('/Coffee-book-project/Categories.json'),
         children:[
           {
             index: true,
             element:<CoffeeCards></CoffeeCards>,
-            loader: ()=> fetch('./Categories.json'),
+            loader: ()=> fetch('/Coffee-book-project/Coffees.json'),
           },
 
           {
-            path:'/category/:category',
+            path:'category/:category',
             element:<CoffeeCards></CoffeeCards>,
-            loader: ()=> fetch('./Coffees.json'),
+            loader: ()=> fetch('/Coffee-book-project/Coffees.json'),
           }
         ]
       },
@@ -34,7 +34,7 @@ const routes = createHashRouter([
       {
         path:'/coffees',
         element:<Coffees></Coffees>,
-        loader: ()=> fetch('./Coffees.json'),
+        loader: ()=> fetch('/Coffee-book-project/Coffees.json'),
       },
 
       {
