@@ -45,11 +45,7 @@ const routes = createHashRouter([
     
     ]
   }
-]
-,
- {
-    basename: "/Coffee-book-project",
-  },
+],
 
 );
 
