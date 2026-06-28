@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Cards = ({coffee}) => {
-    const {name,image,category,ingredients,origin,type,description,rating,id} = coffee;
+    const {name,image,category,ingredients,origin,type,popularities,rating,id} = coffee;
     return (
          <Link to={`/coffees/${id}`} className='transition hover:scale-105 shadow-xl overflow-hidden'>
         <div className="card bg-base-100 w-100 h-125 shadow-sm">
@@ -18,6 +18,7 @@ const Cards = ({coffee}) => {
     <p>Type : {type}</p>
     <p>Origin : {origin}</p>
     <p>Rating : {rating}</p>
+    <p>Popularities : {popularities}</p>
     <div className="card-actions ">
       <button className="btn btn-primary">Buy Now</button>
     </div>

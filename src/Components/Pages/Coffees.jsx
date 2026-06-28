@@ -1,26 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Cards from '../CoffeCards/Cards';
+import Heading from '../Heading';
 
 const Coffees = () => {
     const data = useLoaderData()
+    const [coffees,setCoffees] = useState(data)
+    const handleSort = (sortType)=>{
+     if(sortType === 'popularities'){
+       const sorted = [...data].sort((a,b)=> b.popularities - a.popularities )
+       setCoffees(sorted)
+     }
+     else if(sortType === 'rating'){
+     const sorted = [...data].sort((a,b)=> a.rating - b.rating)
+     setCoffees(sorted)
+     }
+    }
     return (
         <>
 
-        <h1>ALL COFFEES</h1>
-        <>
-        <div className='flex justify-between'>
+        
+        <div className='flex justify-between items-center'>
 
-          <h1></h1>
-          <button className='btn btn-warning'>Sort by Popularity</button>
-          <button className='btn btn warning'>Sort by Rating</button>
+          <Heading title={'Sort Coffees By Popularity & Rating'}/>
+          <div>
+           <button onClick={()=> handleSort('popularities')} className='btn btn-warning text-black mr-8'>Sort by Popularity</button>
+          <button  onClick={()=> handleSort('rating')}className='btn btn-warning text-black'>Sort by Rating</button>
+          </div>
+         
         </div>
 
-        </>
+        
            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-4 gap-10'>
                       {/* coffee cards.....{category} */}
                       {
-                        data.map(coffee=><Cards key={coffee.id} coffee={coffee}/>)
+                        coffees.map(coffee=><Cards key={coffee.id} coffee={coffee}/>)
                       }
                   </div>
         </>

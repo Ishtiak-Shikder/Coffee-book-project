@@ -4,7 +4,7 @@ import banner from "../../assets/download (4).jfif"
 const Banner = () => {
     return (
       <div className = "hero">
-       <img className='w-[900px] h-[700px]' src={banner} alt="" />
+       <img className='w-225 h-175' src={banner} alt="" />
       </div>
     );
 };

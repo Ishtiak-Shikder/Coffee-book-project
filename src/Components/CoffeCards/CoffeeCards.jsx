@@ -3,13 +3,11 @@ import Cards from './Cards';
 import { useEffect, useState } from 'react';
 
 const CoffeeCards = () => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const {category} = useParams();
     const data = useLoaderData();
-    console.log("CoffeeCards data:", data);
-console.log(Array.isArray(data));
     const [coffees,setCoffees] = useState([]);
-    console.log(data)
+   
     useEffect(()=>{
        if(category){
          const filterByData = [...data].filter(coffee=> coffee.category === category);

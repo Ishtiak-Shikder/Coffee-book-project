@@ -6,6 +6,8 @@ import Coffees from "../Pages/Coffees";
 import DashBoard from "../Pages/DashBoard";
 
 import CoffeeCards from "../CoffeCards/CoffeeCards";
+import CoffeesDetail from "../Pages/CoffeesDetail";
+import { ToastContainer } from "react-toastify";
 
 const routes = createHashRouter([
   {
@@ -42,10 +44,17 @@ const routes = createHashRouter([
         element:<DashBoard></DashBoard>,
       },
 
+      {
+        path: 'coffees/:id',
+        element:<CoffeesDetail/>,
+        loader: ()=> fetch('./Coffees.json')
+      }
+
     
     ]
   }
 ],
+
 
 );
 
