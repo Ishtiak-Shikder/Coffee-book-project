@@ -5,6 +5,7 @@ import Footer from './Footer';
 const Layouts = () => {
     return (
         <>
+              
         <div className='h-16'>
             <Navbar/>
         </div>

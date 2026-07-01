@@ -6,20 +6,35 @@ import { addFavorite, getAllFavorite } from '../../Utills';
 const CoffeesDetail = () => {
     const {id} = useParams();
     const data = useLoaderData();
-    // const [coffee,setCoffee] = useState({})
-    // useEffect(()=>{
-    //  const category = data.find(coffee=> coffee.id == id);
-    //  setCoffee(category)
-    // },[data,id])
+    const [coffee,setCoffee] = useState({})
+     const [favorite,setFavorite] = useState(false)
+    useEffect(()=>{
+     const category = data.find(coffee=> coffee.id == id);
+     setCoffee(category);
+     const favorite = getAllFavorite()
+         const isExist = favorite.find(item => item.id === category.id);
+         if(isExist){
+            setFavorite(true)
+         }
+        //  else{
+        //     setFavorite(false)
+        //  }
 
-    const coffee = data.find(
-  coffee => coffee.id == id
-);
 
+    },[data,id])
+
+//     const coffee = data.find(
+//   coffee => coffee.id == id
+// );
+if (!coffee.id) {
+  return <h1>Loading...</h1>;
+}
 const {description,image,making_process,ingredients,nutrition_info,type,popularities,rating} = coffee;
 
 const handleFavorite = (coffee)=>{
-    addFavorite(coffee)
+    addFavorite(coffee);
+    setFavorite(true)
+
 }
     
     return (
@@ -34,7 +49,7 @@ const handleFavorite = (coffee)=>{
             <p>Rating : {rating}</p>
             </div>
            <div>
-            <button onClick={()=> handleFavorite(coffee)} className='btn btn-warning text-black'>Add To Favorite</button>
+            <button disabled={favorite} onClick={()=> handleFavorite(coffee)} className='btn btn-warning text-black'>Add To Favorite</button>
            </div>
           </div>
 
@@ -42,7 +57,7 @@ const handleFavorite = (coffee)=>{
            <h1 className='font-thin text-2xl'>Making-Process : </h1>
             <ul className=' list-decimal px-9'>
                 {
-                    making_process.map((making)=><li className='font-semibold'>{making},</li>)
+                    making_process?.map((making,index)=><li key={index} className='font-semibold'>{making},</li>)
                 }
             </ul>
 
@@ -53,7 +68,7 @@ const handleFavorite = (coffee)=>{
         <h1 className='font-thin text-2xl'>Ingredients : </h1>
             <ul className='my-5 list-decimal px-9'>
                 {
-                    ingredients.map((ingredient)=><li className='font-semibold'>{ingredient}</li>)
+                    ingredients?.map((ingredient,index)=><li key={index} className='font-semibold'>{ingredient}</li>)
                 }
             </ul>
        </div>
